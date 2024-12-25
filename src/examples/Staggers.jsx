@@ -18,8 +18,8 @@ const Staggers = () => {
   }, []);
   return (
     <>
-      <div className="w-32 h-32 bg-orange-400 box green stagger"></div>
-      <div className="w-32 h-32 bg-purple-400 box stagger red"></div>
+      <div className="w-32 h-32 bg-orange-400  green stagger"></div>
+      <div className="w-32 h-32 bg-purple-400  stagger red"></div>
       <div className="w-32 h-32 bg-blue-400 box stagger green"></div>
       <div className="w-32 h-32 bg-indigo-400 box stagger red"></div>
       <div className="w-32 h-32 bg-gray-400 box stagger green"></div>
