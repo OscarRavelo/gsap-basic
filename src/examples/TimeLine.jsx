@@ -2,15 +2,45 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 const TimeLine = () => {
   useGSAP(() => {
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({
+      repeat: -1,
+      yoyo: true,
+    });
 
     tl.to(".timeline-green", {
       x: 600,
-      duration: 2,
-      repeat: -1,
-      yoyo: true,
+      duration: 1,
+
+      delay: 0.2,
       ease: "power1.inOut",
+      rotation: 360,
     });
+
+    tl.to(
+      ".timeline-red",
+      {
+        x: -600,
+        duration: 1,
+        ease: "power1.inOut",
+        rotation: 360,
+      },
+      "<",
+    );
+    tl.to(".timeline-red", {
+      y: -150,
+      ease: "power3",
+      delay: 0.3,
+    });
+    tl.to(
+      ".timeline-yellow",
+      {
+        duration: 1,
+        y: -270,
+        ease: "power1.inOut",
+        rotation: 360,
+      },
+      "-=1",
+    );
   }, []);
   return (
     <>

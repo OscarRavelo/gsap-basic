@@ -1,5 +1,6 @@
 import "./App.css";
 import Easing from "./examples/Easing";
+import FunCalls from "./examples/FunCall";
 import GsapTo from "./examples/GsapTo";
 import Staggers from "./examples/Staggers";
 import TimeLine from "./examples/TimeLine";
@@ -20,7 +21,8 @@ function App() {
           <div className="justify-around items-center grid grid-cols-8 gap-2 flex border-b-4 pb-10 border-red-500 mt-12">
             <Staggers />
           </div>
-          <div className="    flex border-b-4 pb-10 border-red-500 mt-12 flex-col">
+          <div className=" items-center    flex border-b-4 pb-10 border-red-500 mt-12 flex-col">
+            <h2>TimeLine:</h2>
             <TimeLine />
           </div>
         </div>
